@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+}
+form{
+    background-color: blue;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+}
+.formelement{
+    padding: 10px 0px;
+    text-align: left;
+}
+.formelement label{
+    display: block;
+    color: aliceblue;
+}
