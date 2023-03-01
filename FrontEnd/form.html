@@ -9,37 +9,37 @@
 <h1> Student Survey Form </h1>
 <form id="form" class = "form">
     <div class = "formelement">
-        <label for="firstname">Name</label>
-        <input type="text" id="firstname" placeholder="Enter first name">
+        <label  for="firstname"  >First Name*</label>
+        <input type="text" id="firstname" placeholder="Enter first name" required>
     </div>
     <div class="formelement">
-        <label for="lastname">Last Name</label>
-        <input type="text" id = "lastname" placeholder="Enter last name">
+        <label for="lastname">Last Name*</label>
+        <input  type="text" id = "lastname" placeholder="Enter last name" required>
     </div>
     <div class = "formelement">
-        <label for = "address">Street Address</label>
-        <textarea id = "address" placeholder="Not more than 30 characters"></textarea>
+        <label for = "address">Street Address*</label>
+        <textarea id = "address" placeholder="Not more than 30 characters" required></textarea>
         <!-- enforce the limit here-->
     </div>
     <div class="formelement" style="display: flex">
-        <label for="city" style=" margin-right: 5px">City</label>
-        <input type="text" id = "city" placeholder="Enter city">
-        <label for = "state" style="margin-left: 20px; margin-right: 5px">State</label>
-        <input type = "text" id = "state" placeholder = "Enter State">
+        <label for="city" style=" margin-right: 5px">City*</label>
+        <input type="text" id = "city" placeholder="Enter city" required>
+        <label for = "state" style="margin-left: 10px; margin-right: 5px">State*</label>
+        <input type = "text" id = "state" placeholder = "Enter State" required>
     </div>
     <div class = "formelement" style="display: flex" >
-        <label for="zipcode" style=" margin-right: 5px">Zipcode</label>
-        <input type="text" id = "zipcode" placeholder="Enter zipcode">
-        <label for = "phone" style="margin-left: 20px; margin-right: 5px">Mobile Number</label>
-        <input type = "text" id = "phone" placeholder = "Enter Mobile Number">
+        <label for="zipcode" style=" margin-right: 5px">Zipcode*</label>
+        <input type="text" id = "zipcode" placeholder="Enter zipcode" required>
+        <label for = "phone" style="margin-left: 10px; margin-right: 5px">Mobile Number*</label>
+        <input type = "text" id = "phone" placeholder = "Enter Mobile Number" required>
     </div>
     <div class = "formelement">
-        <label for = "email">Street Address</label>
-        <input type="email" id = "email" placeholder="Enter email">
+        <label for = "email">Street Address*</label>
+        <input type="email" id = "email" placeholder="Enter email" required>
     </div>
     <div class = "formelement">
-        <label for = "date">Date</label>
-        <input type = "date" id="date">
+        <label for = "date">Date*</label>
+        <input type = "date" id="date" required>
     </div>
     <div class = "formelement">
         <label>If you are a prospective student:</label>
