@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <link rel = "stylesheet" href = "form.css">
@@ -19,6 +19,7 @@
     <div class = "formelement">
         <label for = "address">Street Address</label>
         <textarea id = "address" placeholder="Not more than 30 characters"></textarea>
+        <!-- enforce the limit here-->
     </div>
     <div class="formelement" style="display: flex">
         <label for="city" style=" margin-right: 5px">City</label>
@@ -41,7 +42,8 @@
         <input type = "date" id="date">
     </div>
     <div class = "formelement">
-        <p>If you are a prospective student:</p>
+        <label>If you are a prospective student:</label>
+        <br/>
         <label>What do you like the most about the college?</label>
         <div class = "checkboxcontoller" style="display: inline-flex">
             <input id="students" type="checkbox" value="students">
@@ -58,6 +60,44 @@
             <label for="sports">Sports</label>
         </div>
     </div>
+    <div class = "formelement" >
+        <label>Why are you intrested in this university</label>
+        <div style="display: flex">
+            <input type = "radio" id="friend" value = "friend">
+            <label for = "friend">Friends</label>
+        </div>
+        <div style="display: flex">
+            <input type = "radio" id = "television" value = television">
+            <label for = "television">Television</label>
+        </div>
+        <div style="display: flex">
+            <input type = "radio" id = "internet" value = internet">
+            <label for = "internet">Internet</label>
+        </div>
+        <div style="display: flex">
+            <input type = "radio" id = "Other" value = other">
+            <label for = "Other">Other</label>
+        </div>
+    </div>
+    <div class = "formelement">
+        <label>Would you recommend this university to your friends/family</label>
+        <select id="recommendation">
+            <option value="likely">Likely</option>
+            <option value = "very likely">Very Likely</option>
+            <option value = "not likely">Not Likely</option>
+        </select>
+    </div>
+    <div class = "formelement">
+        <label>Each lucky winner will win a free movie ticket</label>
+        <textarea rows = "2" cols = "30" placeholder="Enter exactly 10 comma spaced numbers from [1,100]" size="1000"></textarea>
+<!--        add regular expression to make sure input is 10 comma spaced numbers only.-->
+    </div>
+    <div class = "formelement">
+        <label>Additional Comments</label>
+        <textarea rows = "2" cols = "30" placeholder = "Enter your comments here"></textarea>
+    </div>
+    <input type = "submit" value = "Submit" id="submit" class = "button">
+    <input type = "reset" value = "Reset" class="button">
     <br/>
 </form>
 </body>
